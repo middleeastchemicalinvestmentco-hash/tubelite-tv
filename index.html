@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="TubeLite TV is a lightweight YouTube API client designed for Android TV, including older and lower-powered devices." />
+  <title>TubeLite TV — Android TV YouTube Client</title>
+  <link rel="icon" href="assets/tubelite-logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><img src="assets/tubelite-logo.png" alt="TubeLite TV logo" /><span>TubeLite TV</span></a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#review">Reviewer access</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="keep" href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="badge">● Private testing / pre-release</span>
+        <h1>Lightweight YouTube viewing for Android TV.</h1>
+        <p class="lead">TubeLite TV is an independent Android TV client focused on remote-friendly navigation, efficient YouTube Data API usage, live discovery, account features, Kids Mode, and compatibility with both modern and selected legacy Android TV devices.</p>
+        <div class="actions">
+          <a class="btn primary" href="#review">Reviewer information</a>
+          <a class="btn secondary" href="privacy.html">Privacy notice</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/tubelite-logo.png" alt="TubeLite TV app icon" />
+        <div class="caption">Android TV • Remote-first • YouTube API Services</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="kicker">Product scope</div>
+      <h2 class="section-title">What TubeLite TV does</h2>
+      <p class="section-sub">The application retrieves YouTube metadata through the official YouTube Data API and plays YouTube content through YouTube's embedded player. It does not host or redistribute YouTube video files.</p>
+      <div class="grid">
+        <article class="card"><h3>TV search & discovery</h3><p>Search, category browsing, channels, playlists, Shorts-oriented discovery, and cached metadata designed to reduce unnecessary API calls.</p></article>
+        <article class="card"><h3>Live broadcasts</h3><p>Discovers currently active YouTube broadcasts using official API metadata and filters for playable/embeddable results.</p></article>
+        <article class="card"><h3>Google account access</h3><p>Optional Google device OAuth enables account-specific YouTube features such as subscriptions and playlists without asking for the user's Google password.</p></article>
+        <article class="card"><h3>Remote-first interface</h3><p>Large TV controls, D-pad navigation, playback overlays, history, autoplay preferences, and an interface intended for 10-foot viewing.</p></article>
+        <article class="card"><h3>Kids Mode</h3><p>A parent-PIN mode that narrows discovery and separates local viewing history while keeping account and escape actions constrained.</p></article>
+        <article class="card"><h3>Quota-conscious design</h3><p>Results are cached and non-search category feeds use lower-cost API endpoints where appropriate to reduce YouTube API quota consumption.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="review">
+    <div class="wrap">
+      <div class="kicker">YouTube API review</div>
+      <h2 class="section-title">Reviewer access & API use</h2>
+      <p class="section-sub">This page is intended to give Google/YouTube reviewers a stable public description of the pre-release API client while the application itself remains in private testing.</p>
+      <div class="review">
+        <article class="card">
+          <h3>API client information</h3>
+          <div class="meta">
+            <div class="meta-row"><b>API client name</b><span>TubeLite TV Android TV Client</span></div>
+            <div class="meta-row"><b>Platform</b><span>Android TV / Android</span></div>
+            <div class="meta-row"><b>Availability</b><span>Private testing; not yet publicly distributed</span></div>
+            <div class="meta-row"><b>Primary YouTube API</b><span>YouTube Data API v3</span></div>
+            <div class="meta-row"><b>Playback</b><span>YouTube embedded player</span></div>
+            <div class="meta-row"><b>OAuth</b><span>Google OAuth 2.0 device flow for limited-input devices</span></div>
+          </div>
+        </article>
+        <article class="card">
+          <h3>How a reviewer can access the app</h3>
+          <p>TubeLite TV is currently being tested as an APK before public distribution. A reviewer APK and test instructions can be supplied to Google/YouTube as part of the compliance review process.</p>
+          <p>Public browsing does not require sign-in. Account-dependent functionality requires an authorized Google account through Google's device authorization flow.</p>
+          <div class="note"><strong>Before submitting the quota form:</strong> replace the support/contact placeholders in the Privacy page and, if Google requests direct binary access, add your private reviewer APK or repository release link here.</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="kicker">Compliance posture</div>
+      <h2 class="section-title">Data and user control</h2>
+      <div class="grid">
+        <article class="card"><h3>No Google password collection</h3><p>Authentication is handled by Google's OAuth device authorization flow on a separate browser-capable device.</p></article>
+        <article class="card"><h3>Local app data</h3><p>Settings, cached metadata, playback history, and resume state may be stored locally. Users can clear local history or uninstall the app.</p></article>
+        <article class="card"><h3>User-authorized actions</h3><p>Account-changing actions such as subscribing or unsubscribing are performed only after user authorization and an explicit user action.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>TubeLite TV</strong> is an independent application and is not endorsed by or affiliated with Google LLC or YouTube LLC.
+    <div class="smalllinks"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="#review">Reviewer access</a></div>
+  </div>
+</footer>
+</body>
+</html>
